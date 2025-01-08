@@ -1,0 +1,43 @@
+@font-face {
+    font-family: 'Sui Generis';
+    src: url('./fonts/sui-generis-free.rg-regular.ttf') format('embedded-opentype'), /* Internet Explorer */
+         url('./fonts/sui-generis-free.rg-regular.ttf') format('woff2'),             /* Super Modern Browsers */
+         url('./fonts/sui-generis-free.rg-regular.ttf') format('woff'),              /* Pretty Modern Browsers */
+         url('./fonts/sui-generis-free.rg-regular.ttf') format('truetype'),          /* Safari, Android, iOS */
+         url('./fonts/sui-generis-free.rg-regular.ttf') format('svg');               /* Legacy iOS */
+}
+@font-face {
+    font-family: 'Aileron Regular';
+    src: url('./fonts/aileron.regular.otf') format('embedded-opentype'), /* Internet Explorer */
+         url('./fonts/aileron.regular.otf') format('woff2'),             /* Super Modern Browsers */
+         url('./fonts/aileron.regular.otf') format('woff'),              /* Pretty Modern Browsers */
+         url('./fonts/aileron.regular.otf') format('truetype'),          /* Safari, Android, iOS */
+         url('./fonts/aileron.regular.otf') format('svg');               /* Legacy iOS */
+}
+body {
+    background-color: white;
+    font-family: 'Aileron Regular';
+    font-size: 18px;
+}
+h1 {
+    font-family: 'Sui Generis';
+    font-size: 30px;
+}
+a:link {
+    color: violet;
+}
+
+/* visited link */
+a:visited {
+    color: pink;
+}
+
+/* mouse over link */
+a:hover {
+    color: salmon ;
+}
+
+/* selected link */
+a:active {
+    color: plum;
+}
