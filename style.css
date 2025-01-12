@@ -23,6 +23,38 @@ h1 {
     font-family: 'Sui Generis';
     font-size: 30px;
 }
+div {
+    background-color: #606090aa;
+    color:white;
+    border-radius: 10px;
+    padding:5px;
+    margin:10px;
+  }
+body {
+    background-color: #222;
+}
+
+button {
+    text-align:center;
+    font-family:'Sui Generis';
+    font-size:xx-large;
+    color:white;
+    background-color:rgba(100, 214, 255, 0.58);
+    border:0px;
+    border-radius: 5px;
+    width:95%;
+    height:50px;
+    padding:5px;
+    margin: 5px;
+}
+
+button:hover {
+  background-color:rgb(0, 157, 255);
+}
+ 
+a {
+    text-decoration: none;
+}
 a:link {
     color: violet;
 }
