@@ -10,25 +10,38 @@
 </head>
 <style>
 </style>
-<body>
-  <div style="text-align:center;">
+<body style="text-align:center;">
+  <div class="styleddiv">
     <h1 style="font-family: Arial, Helvetica, sans-serif;">Welkom Welcome Bem Vindo</h1>
-   <header style="text-align:center;">
+    <header>
       <h1 style="font-family: Arial, Helvetica, sans-serif; font-style: italic";>This website is work in progress</h1>
-  </header>
+    </header>
     <hr>
-  <main>
-    <div style="text-align:center;">
-      <h1>Who are we?</h1>
-      <p>
-        We are a software and game development company, founded in The Netherlands 
-      </p>
-    </div>
-    <br>
-      <button class="bigbutton" onclick="gotoPageOurProjects()">Our projects</button>
-  </main>
-  <footer>
-
-  </footer>
+    <main>
+      <div class="greydiv">
+        <h1>Who are we?</h1>
+        <p>
+          We are a software and game development company, founded in The Netherlands 
+        </p>
+        <br>
+        <button class="bigbutton" onclick="alert('Sorry, this page is missing!')">About Us</button>
+      </div>
+      <div class="greydiv">
+        <h1>What is our job?</h1>
+        <p>
+          We do private software contracts and develop games
+        </p>
+        <br>
+        <button class="bigbutton" onclick="gotoPageOurProjects()">Our projects</button>
+      </div>
+    </main>
+    <hr>
+    <footer class="greydiv" style="flex:content; flex-direction: row;">
+      <h2>Our Socials</h2>
+      <a target="_blank" href="https://x.com/PShockStudios"><img src="icons/x_dot_com.png" class="socialsIcon" alt="x.com"></a>
+      <a target="_blank" href="https://www.instagram.com/pyroshockstudios/"><img src="icons/instagram.webp" class="socialsIcon" alt="Instagram"></a>
+      <a target="_blank" href="https://facebook.com/pyroshockstudios"><img src="icons/facebook.webp" class="socialsIcon" alt="Facebook"></a>
+    </footer>
+  </div>
 </body>
 </html>
