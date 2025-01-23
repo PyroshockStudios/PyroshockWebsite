@@ -9,10 +9,45 @@
     <script src="redirector.js"></script>
 </head>
 <style>
+  @keyframes example {
+    0%   { opacity: 100%;}
+    20% { opacity: 100%;}
+    30% { opacity: 0%;}
+    90% { opacity: 0%;}
+    100% { opacity: 100%;}
+  }
+  div.flexCenter {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+  }
+  .fadingtext {
+    position:absolute;
+    top: 0px;
+    animation-name: example;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    opacity:0%;
+  }
+  div#hellofase0 {
+    animation-delay: 0s;
+  }
+  div#hellofase1 {
+    animation-delay: 2s;
+  }
+  div#hellofase2 {
+    animation-delay: 4s;
+  }
 </style>
 <body style="text-align:center;">
   <div class="styleddiv">
-    <h1 style="font-family: Arial, Helvetica, sans-serif;">Welkom Welcome Bem Vindo</h1>
+    <div class="flexCenter" style="font-family: Arial, Helvetica, sans-serif;">
+      <div class="fadingtext" id="hellofase0"><h1>Welkom</h1></div>
+      <div class="fadingtext" id="hellofase1"><h1>Welcome</h1></div>
+      <div class="fadingtext" id="hellofase2"><h1>Bem Vindo</h1></div>
+    </div>
+    <br><br>
     <header>
       <h1 style="font-family: Arial, Helvetica, sans-serif; font-style: italic";>This website is work in progress</h1>
     </header>
