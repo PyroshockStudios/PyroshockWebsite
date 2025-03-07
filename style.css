@@ -24,14 +24,14 @@ h1 {
     font-size: 30px;
 }
 header, div.styleddiv, main, footer {
-    background-color: #606090aa;
+    background-color: #606090bb;
     color:white;
     border-radius: 10px;
     padding:5px;
     margin:10px;
 }
-header.greydiv, div.greydiv, main.greydiv, footer.greydiv {
-    background-color: #0003;
+header.greydiv, div.greydiv, main.greydiv, footer.greydiv, section.greydiv {
+    background-color: #0005;
     border-radius: 10px;
     padding:5px;
     margin:10px;
@@ -45,7 +45,7 @@ button {
     font-family:'Sui Generis';
     font-size:xx-large;
     color:white;
-    background-color:rgba(100, 214, 255, 0.58);
+    background-color:rgba(100, 214, 255, 0.7);
     border:0px;
     border-radius: 5px;
     width:70%;
