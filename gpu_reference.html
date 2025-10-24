@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPU generation cheat sheet</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="images/png" href="icons/logo_icon_32.png">
+    <script src="redirector.js"></script>
+</head>
+<style>
+</style>
+<body style="text-align:center; background-image: url(images/logo.png);
+    background-repeat: no-repeat; background-position: 50%; background-size: 50%;">
+    <h1 id="gpu-generation-equivalence-nvidia-vs-amd-vs-intel-igpu-">GPU Generation Cheat Sheet, 2012-2025</h1>
+    <table>
+    <thead>
+    <tr>
+    <th><strong>NVIDIA Generation</strong></th>
+    <th><strong>Architecture</strong></th>
+    <th><strong>Release Year</strong></th>
+    <th><strong>AMD Equivalent (Desktop GPU)</strong></th>
+    <th><strong>AMD Architecture</strong></th>
+    <th><strong>Intel Equivalent (iGPU)</strong></th>
+    <th><strong>Intel Graphics Architecture</strong></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td><strong>GTX 600 / 700 Series</strong></td>
+    <td>Kepler</td>
+    <td>2012–2013</td>
+    <td><strong>HD 7000 / R9 200 Series</strong></td>
+    <td>GCN 1.0–1.1</td>
+    <td><strong>Intel HD 4000 / 4600</strong></td>
+    <td>Ivy Bridge / Haswell (Gen 7 / 7.5)</td>
+    </tr>
+    <tr>
+    <td><strong>GTX 900 Series</strong></td>
+    <td>Maxwell</td>
+    <td>2014–2015</td>
+    <td><strong>R9 300 / Fury Series</strong></td>
+    <td>GCN 1.2</td>
+    <td><strong>Intel HD 5000 / 5200 / 5500 / 6000</strong></td>
+    <td>Broadwell (Gen 8)</td>
+    </tr>
+    <tr>
+    <td><strong>GTX 10 Series</strong></td>
+    <td>Pascal</td>
+    <td>2016–2018</td>
+    <td><strong>RX 400 / 500 / Vega Series</strong></td>
+    <td>GCN 4 / Vega</td>
+    <td><strong>Intel UHD 620 / Iris Plus 640–655</strong></td>
+    <td>Kaby Lake / Coffee Lake (Gen 9 / 9.5)</td>
+    </tr>
+    <tr>
+    <td><strong>GTX 16 Series + RTX 20 Series (incl. SUPER)</strong></td>
+    <td>Turing</td>
+    <td>2018–2019</td>
+    <td><strong>RX 5000 Series</strong></td>
+    <td>RDNA 1</td>
+    <td><strong>Intel UHD 620 / 630 / Iris Plus G7</strong></td>
+    <td>Kaby Lake R / Coffee Lake / Ice Lake (Gen 9.5 → 11)</td>
+    </tr>
+    <tr>
+    <td><strong>RTX 30 Series</strong></td>
+    <td>Ampere</td>
+    <td>2020–2022</td>
+    <td><strong>RX 6000 Series</strong></td>
+    <td>RDNA 2</td>
+    <td><strong>Intel Iris Xe (G7, Xe-LP)</strong></td>
+    <td>Tiger Lake / Alder Lake (Gen 12)</td>
+    </tr>
+    <tr>
+    <td><strong>RTX 40 Series</strong></td>
+    <td>Ada Lovelace</td>
+    <td>2022–2024</td>
+    <td><strong>RX 7000 Series</strong></td>
+    <td>RDNA 3</td>
+    <td><strong>Intel Xe-LPG / Xe-LP+ (Iris Xe refresh)</strong></td>
+    <td>Raptor Lake / Meteor Lake</td>
+    </tr>
+    <tr>
+    <td><strong>RTX 50 Series</strong> <em>(current / upcoming)</em></td>
+    <td>Blackwell</td>
+    <td>2025+</td>
+    <td><strong>RX 9000 Series</strong></td>
+    <td>RDNA 4</td>
+    <td><strong>Intel Xe2-LPG (Lunar Lake)</strong></td>
+    <td>Xe2 (Battlemage iGPU)</td>
+    </tr>
+    </tbody>
+    </table>
+    <hr>
+    <h2 id="intel-igpu-evolution-reference">Intel iGPU Evolution Reference</h2>
+    <table>
+    <thead>
+    <tr>
+    <th><strong>Intel Graphics Name</strong></th>
+    <th><strong>CPU Generation</strong></th>
+    <th><strong>GPU Architecture</strong></th>
+    <th><strong>Approx. NVIDIA Era</strong></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>HD 4000</td>
+    <td>3rd Gen (Ivy Bridge, 2012)</td>
+    <td>Gen 7</td>
+    <td>GTX 600–700</td>
+    </tr>
+    <tr>
+    <td>HD 4600</td>
+    <td>4th Gen (Haswell, 2013)</td>
+    <td>Gen 7.5</td>
+    <td>GTX 700</td>
+    </tr>
+    <tr>
+    <td>HD 5500 / 6000</td>
+    <td>5th Gen (Broadwell, 2015)</td>
+    <td>Gen 8</td>
+    <td>GTX 900</td>
+    </tr>
+    <tr>
+    <td>UHD 620 / 630</td>
+    <td>7th–8th Gen (Kaby / Coffee Lake, 2016–2018)</td>
+    <td>Gen 9 / 9.5</td>
+    <td>GTX 10 → GTX 16 / RTX 20</td>
+    </tr>
+    <tr>
+    <td>Iris Plus G7</td>
+    <td>10th Gen (Ice Lake, 2019)</td>
+    <td>Gen 11</td>
+    <td>RTX 20</td>
+    </tr>
+    <tr>
+    <td>Iris Xe (G7)</td>
+    <td>11th Gen (Tiger Lake, 2020)</td>
+    <td>Gen 12 (Xe-LP)</td>
+    <td>RTX 30</td>
+    </tr>
+    <tr>
+    <td>Iris Xe (Alder / Raptor Lake)</td>
+    <td>12th–13th Gen (2021–2023)</td>
+    <td>Xe-LP+</td>
+    <td>RTX 40</td>
+    </tr>
+    <tr>
+    <td>Xe2-LPG</td>
+    <td>14th Gen (Lunar Lake, 2025)</td>
+    <td>Xe2 (Battlemage)</td>
+    <td>RTX 50</td>
+    </tr>
+    </tbody>
+    </table>
+    <hr>
+    <h3 id="-brain-notes">:brain: Notes</h3>
+    <ul>
+    <li>The <strong>GTX 16 Series</strong> shares <strong>Turing architecture</strong> with RTX 20, but lacks ray-tracing (RT) and tensor cores.  </li>
+    <li><strong>Intel UHD 620 and 630</strong> launched simultaneously (Gen 9.5):  <ul>
+    <li><em>620</em> → low-power U-series (ultrabooks)  </li>
+    <li><em>630</em> → high-power H/desktop CPUs.  </li>
+    </ul>
+    </li>
+    <li><strong>Iris Xe (Gen 12)</strong> was Intel’s first major jump toward low-end discrete GPU levels (≈ GTX 1050 / MX 450).  </li>
+    <li><strong>Xe2 (Lunar Lake, 2025)</strong> roughly approaches <strong>GTX 1650 / RTX 2050 Mobile</strong> performance.  </li>
+    <li><strong>AMD RX 9000 (RDNA 4)</strong> corresponds to the <strong>RTX 50 (Blackwell)</strong> era.</li>
+    </ul>
+    <hr>
+
+</body>
+</html>
