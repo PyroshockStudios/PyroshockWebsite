@@ -11,8 +11,21 @@
 </head>
 <style>
 </style>
-<body style="text-align:center; background-image: url(images/logo.png);
-    background-repeat: no-repeat; background-position: 50%; background-size: 50%;">
+<body style="
+  text-align: center;
+  position: relative;
+  background-color: white;
+">
+      <div style="
+        position: fixed;
+        inset: 0;
+        background: url('images/logo.png') no-repeat 50% 50%;
+        background-size: 50%;
+        opacity: 0.2;
+        pointer-events: none; 
+        z-index: -1;
+      "></div>
+
     <h1 id="gpu-generation-equivalence-nvidia-vs-amd-vs-intel-igpu-">GPU Generation Cheat Sheet, 2012-2025</h1>
     <table>
     <thead>
@@ -51,7 +64,7 @@
     <td>2016–2018</td>
     <td><strong>RX 400 / 500 / Vega Series</strong></td>
     <td>GCN 4 / Vega</td>
-    <td><strong>Intel UHD 620 / Iris Plus 640–655</strong></td>
+    <td><strong>Intel UHD 620 / 630</strong></td>
     <td>Kaby Lake / Coffee Lake (Gen 9 / 9.5)</td>
     </tr>
     <tr>
@@ -60,7 +73,7 @@
     <td>2018–2019</td>
     <td><strong>RX 5000 Series</strong></td>
     <td>RDNA 1</td>
-    <td><strong>Intel UHD 620 / 630 / Iris Plus G7</strong></td>
+    <td><strong>Iris Plus G7</strong></td>
     <td>Kaby Lake R / Coffee Lake / Ice Lake (Gen 9.5 → 11)</td>
     </tr>
     <tr>
@@ -155,19 +168,11 @@
     </tbody>
     </table>
     <hr>
-    <h3 id="-brain-notes">:brain: Notes</h3>
     <ul>
-    <li>The <strong>GTX 16 Series</strong> shares <strong>Turing architecture</strong> with RTX 20, but lacks ray-tracing (RT) and tensor cores.  </li>
-    <li><strong>Intel UHD 620 and 630</strong> launched simultaneously (Gen 9.5):  <ul>
-    <li><em>620</em> → low-power U-series (ultrabooks)  </li>
-    <li><em>630</em> → high-power H/desktop CPUs.  </li>
-    </ul>
-    </li>
-    <li><strong>Iris Xe (Gen 12)</strong> was Intel’s first major jump toward low-end discrete GPU levels (≈ GTX 1050 / MX 450).  </li>
-    <li><strong>Xe2 (Lunar Lake, 2025)</strong> roughly approaches <strong>GTX 1650 / RTX 2050 Mobile</strong> performance.  </li>
-    <li><strong>AMD RX 9000 (RDNA 4)</strong> corresponds to the <strong>RTX 50 (Blackwell)</strong> era.</li>
+        
     </ul>
     <hr>
 
 </body>
 </html>
+
