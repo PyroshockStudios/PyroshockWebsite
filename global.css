@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 @font-face {
     font-family: 'Sui Generis';
     src: url('./fonts/sui-generis-free.rg-regular.ttf') format('embedded-opentype'), /* Internet Explorer */
@@ -14,57 +16,38 @@
          url('./fonts/aileron.regular.otf') format('truetype'),          /* Safari, Android, iOS */
          url('./fonts/aileron.regular.otf') format('svg');               /* Legacy iOS */
 }
-body {
-    background-color: white;
-    font-family: 'Aileron Regular';
-    font-size: 18px;
-}
-h1 {
-    font-family: 'Sui Generis';
-    font-size: 30px;
-}
-header, div.styleddiv, main, footer {
-    background-color: #606090bb;
-    color:white;
+
+header, main {
+    background-color: #0005; 
+    color: #eee;
     border-radius: 10px;
     padding:5px;
     margin:10px;
 }
-header.greydiv, div.greydiv, main.greydiv, footer.greydiv, section.greydiv {
-    background-color: #0005;
-    border-radius: 10px;
-    padding:5px;
-    margin:10px;
-}
+
 body {
     background-color: #222;
+	line-height: 1.6;
+    color: #eee;
+    font-family: 'Roboto', 'Aileron Regular', sans-serif;
+    font-size: 18px;
+    margin: 0; 
+    padding: 0;
+	padding-bottom: 190px; 
+}
+@media (min-width: 550px) {
+    body {
+        padding-bottom: 120px;
+    }
 }
 
-button {
-    text-align:center;
-    font-family:'Sui Generis';
-    font-size:xx-large;
-    color:white;
-    background-color:rgba(100, 214, 255, 0.7);
-    border:0px;
-    border-radius: 5px;
-    width:70%;
-    height:50px;
-    padding:5px;
-    margin: 5px;
+h1, h2, h3 {
+    font-family: 'Sui Generis';
+}
+h1 {
+    font-size: 30px;
 }
 
-button:hover {
-  background-color:rgb(0, 157, 255);
-}
-
-img.socialsIcon {
-    width:40px;
-    height:40px;
-    margin-left:10px;
-    margin-right:10px;
-}
- 
 a {
     text-decoration: none;
 }
@@ -86,3 +69,4 @@ a:hover {
 a:active {
     color: plum;
 }
+
