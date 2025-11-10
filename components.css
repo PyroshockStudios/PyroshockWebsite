@@ -28,7 +28,7 @@ img.socialsIcon:hover {
 button, .bigbutton {
     text-align: center;
     font-family: 'Sui Generis';
-    font-size: x-large; /* slightly smaller than xx-large */
+    font-size: x-large; 
     color: white;
     background-color: rgba(100, 214, 255, 0.7);
     border: 0px;
@@ -90,14 +90,14 @@ button:hover, .bigbutton:hover {
     border-top: 1px solid #606090bb;
     
     padding: 15px 10px;
-    margin: 0; /* Override base margin */
-    border-radius: 0; /* It's a bar now, no radius */
+    margin: 0; 
+    border-radius: 0; 
 
     display: flex;
-    flex-wrap: wrap; /* Lets items stack on small screens */
-    justify-content: center; /* Center the columns */
+    flex-wrap: wrap; 
+    justify-content: center;
     align-items: center;
-    gap: 40px; /* Space between "Socials" and "Contact" */
+    gap: 40px;
     
     z-index: 9999; /* Ensures it stays on top */
 }
@@ -133,9 +133,6 @@ button:hover, .bigbutton:hover {
 /* The CSS Grid container */
 .project-grid {
     display: grid;
-    /* This is the magic: create columns that are at least 350px wide,
-       but let them grow to fill the space. 'auto-fit' adds as many
-       columns as can fit. This is automatically responsive! */
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 20px;
     padding: 20px;
@@ -147,7 +144,7 @@ button:hover, .bigbutton:hover {
     background-position: center;
     background-size: cover;
     background-color: #000a; /* Dark fallback color */
-    background-blend-mode: multiply; /* Blends image with color */
+    background-blend-mode: multiply; 
 
     border-radius: 10px;
     padding: 20px;
@@ -177,6 +174,9 @@ button:hover, .bigbutton:hover {
 
 .project-card a {
     text-decoration: none;
-    /* This tells the link to get its color from its child (the h3) */
     color: inherit; 
+}
+
+.weak-text {
+    opacity: 50%;
 }
